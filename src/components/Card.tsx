@@ -1,1 +1,1 @@
-import { } from 'vue'
+import { FunctionalComponent } from 'vue'
