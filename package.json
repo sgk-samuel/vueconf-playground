@@ -1,0 +1,20 @@
+{
+  "name": "vueconf-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite ."
+  },
+  "keywords": [],
+  "author": "sgk",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "vue": "^3.4.19"
+  }
+}
