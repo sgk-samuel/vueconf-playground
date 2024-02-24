@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive, computed } from 'vue'
 import { useMousePosition } from './hooks'
-import { createText, createElement } from './utils'
+import { createText, createElement, createComment } from './utils'
 
 const count = ref(0)
 const { x, y } = useMousePosition()
