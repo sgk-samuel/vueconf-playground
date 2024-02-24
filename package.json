@@ -1,7 +1,7 @@
 {
   "name": "vueconf-playground",
   "version": "1.0.0",
-  "description": "",
+  "description": "vue conf playground",
   "main": "index.js",
   "type": "module",
   "scripts": {
