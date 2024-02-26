@@ -4,3 +4,6 @@ declare module '*.vue' {
 	
 }
 
+declare interface ImportMeta {
+	env:object
+}

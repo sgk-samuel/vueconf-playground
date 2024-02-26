@@ -5,16 +5,33 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite ."
+    "dev": "vite .",
+    "build:test": "vue-tsc --noEmit & vite build",
+    "build:prod":"",
+    "mock": "json-server -c json-server.json mock/data.json",
+    "test":"vitest --dir src/utils/__test__ --run"
+  },
+  "engines": {
+    "node": ">=15.10.3 <18",
+    "npm": ">=6.15.0"
   },
   "keywords": [],
   "author": "sgk",
   "license": "ISC",
   "devDependencies": {
+    "@rushstack/eslint-patch": "^1.7.2",
+    "@types/node": "^20.11.20",
     "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^5.1.4"
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "rollup-plugin-external-globals": "^0.9.2",
+    "vite": "^5.1.4",
+    "vitest": "^1.3.1",
+    "vue-tsc": "^1.8.27"
   },
   "dependencies": {
-    "vue": "^3.4.19"
+    "vitepress": "1.0.0-rc.44",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0",
+    "vuex": "^4.1.0"
   }
 }

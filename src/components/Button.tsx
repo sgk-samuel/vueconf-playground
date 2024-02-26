@@ -1,7 +1,10 @@
-import { FunctionalComponent, h } from 'vue'
+import { FunctionalComponent, createVNode, inject } from 'vue'
+import { injectKeyOfGlobalConfig } from '../constant/index.ts'
 
-const Button: FunctionalComponent = ()=>{
-	return h('button', 'button')
+const Button: FunctionalComponent = (props, ctx)=>{
+	const globalConfig = inject(injectKeyOfGlobalConfig)!
+
+	return <button></button>
 }
 
 export default Button

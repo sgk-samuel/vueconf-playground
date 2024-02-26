@@ -1,0 +1,25 @@
+workflow:
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "main"'
+
+stages:
+  - build
+  - deploy
+
+build_prod:
+  stage: build
+  cache:
+    key: build_prod
+    paths:
+      - node_modules/
+  script:
+    - yarn install
+    - yarn build:prod
+  artifacts:
+    paths:
+      - dist
+      
+deploy_prod:
+  stage: deploy
+  script:
+    - scp -r $CI_PROJECT_DIR username@host:/usr/share/nginx/html
