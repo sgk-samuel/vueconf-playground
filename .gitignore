@@ -4,3 +4,7 @@ node_modules
 
 README.md
 
+*.log
+
+pnpm-lock.yaml
+
