@@ -19,6 +19,14 @@ git diff [hash] [filename]
 
 git branch [-v]
 
+git restore [filename] [--staged]
+
+git rm [filename] [--force]
+
+git mv [oldname] [newname]
+
+git switch -c [branch]
+
 
 
 ```
