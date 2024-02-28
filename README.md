@@ -21,6 +21,13 @@ git branch [-v]
 
 git clone <url> 
 
+git restore [filename] [--staged]
+
+git rm [filename] [--force]
+
+git mv [oldname] [newname]
+
+git switch -c [branch]
 
 
 
