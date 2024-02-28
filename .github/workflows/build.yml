@@ -1,0 +1,14 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**/*
+
+jobs:
+  prepare:
+  install:
+    needs: prepare
+    

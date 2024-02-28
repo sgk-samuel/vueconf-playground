@@ -1,6 +1,12 @@
+image: node:16
+
 workflow:
   rules:
     - if: '$CI_COMMIT_REF_NAME == "main"'
+
+cache:
+  paths:
+    - node_modules
 
 stages:
   - build
@@ -25,3 +31,6 @@ deploy_prod:
     - deploy
   script:
     - scp -r $CI_PROJECT_DIR username@host:/usr/share/nginx/html
+  when: manual
+  only:
+    - main

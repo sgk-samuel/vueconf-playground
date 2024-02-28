@@ -1,0 +1,24 @@
+{
+  "name": "cicd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "bin/cli.js",
+  "keywords": [],
+  "author": "sgk",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "koa": "^2.15.0",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1",
+    "koa-session": "^6.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0"
+  }
+}

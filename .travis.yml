@@ -1,9 +1,12 @@
 language: nodejs
 
+nodejs:
+	- ">=16.17.0"
+
 before_script:
 	- npm prepare
 
 script:
 	- npm test
 
-
+                                                                                                                                                  
