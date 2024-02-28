@@ -19,6 +19,9 @@ git diff [hash] [filename]
 
 git branch [-v]
 
+git clone <url> 
+
+
 
 
 ```
