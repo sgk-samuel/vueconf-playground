@@ -29,9 +29,9 @@ git mv [oldname] [newname]
 
 git switch -c [branch]
 
+git fetch 
 
-
-
+git merge 
 
 
 ```
