@@ -27,7 +27,7 @@ git rm [filename] [--force]
 
 git mv [oldname] [newname]
 
-git switch -c [branch]
+git switch -c [branch] [hash]
 
 git fetch 
 
@@ -35,4 +35,3 @@ git merge [remote/branch]
 
 
 ```
-xxx
