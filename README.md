@@ -31,7 +31,7 @@ git switch -c [branch]
 
 git fetch 
 
-git merge 
+git merge [remote/branch]
 
 
 ```
