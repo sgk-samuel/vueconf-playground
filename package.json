@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite .",
     "build:test": "vue-tsc --noEmit & vite build",
-    "build:prod":"",
+    "build:release":"vue-tsc --noEmit & vite build --mode release",
+    "build:prod":"vue-tsc --noEmit & vite build --mode product",
     "mock": "json-server -c json-server.json mock/data.json",
     "test":"vitest --dir src/utils/__test__ --run"
   },

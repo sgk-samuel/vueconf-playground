@@ -3,6 +3,7 @@ import { jsonp, fetch, HTTPClient } from '../ajax.ts'
 import { remove, removeAt } from '../array.ts'
 import { bool } from '../convert.ts'
 import { sleep } from '../builtin.ts'
+import { Vue } from '../object.ts'
 
 interface Todo {
 	userId:number
@@ -50,5 +51,14 @@ describe('convert module', ()=>{
 		expect(bool([])).toBeTruthy()
 
 	})
+})
+
+describe('object module', ()=>{
+	it('Vue constructor test', ()=>{
+		expect(Vue()).toBeInstanceOf(Vue)
+
+
+	})
+
 })
 

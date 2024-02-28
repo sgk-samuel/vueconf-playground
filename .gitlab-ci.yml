@@ -21,5 +21,7 @@ build_prod:
       
 deploy_prod:
   stage: deploy
+  tags: 
+    - deploy
   script:
     - scp -r $CI_PROJECT_DIR username@host:/usr/share/nginx/html
