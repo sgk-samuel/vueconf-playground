@@ -5,7 +5,8 @@
   "main": "cli.ts",
   "private":false,
   "scripts": {
-    "serve": "nodemon server/app.ts"
+    "serve": "nodemon server/app.ts",
+    "publish":"npm publish"
   },
   "bin": "bin/cli.js",
   "keywords": [],
