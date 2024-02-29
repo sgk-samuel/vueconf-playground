@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "cli.ts",
+  "private":false,
   "scripts": {
     "serve": "nodemon server/app.ts"
   },
