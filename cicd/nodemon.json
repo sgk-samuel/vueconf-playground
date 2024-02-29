@@ -4,6 +4,8 @@
 
 	},
 	"execMap":{},
-	"ignore":[],
+	"ignore":[
+		"node_modules/**/*"
+	],
 
 }
