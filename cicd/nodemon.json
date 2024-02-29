@@ -3,6 +3,7 @@
 	"env":{
 
 	},
-	"execMap":{}
+	"execMap":{},
+	"ignore":[],
 
 }
