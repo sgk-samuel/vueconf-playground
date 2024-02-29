@@ -3,7 +3,7 @@ git checkout [hash|master|tag]
 
 git merge <branch> [--no-ff]
 
-git reset [--hard] [--mixed] [--soft] HEAD [hash]
+git reset [--hard] [--mixed] [--soft] [HEAD|hash]
 
 git log [--oneline] [--all] [--graph]
 
@@ -32,6 +32,14 @@ git switch -c [branch] [hash]
 git fetch 
 
 git merge [remote/branch]
+
+
+```
+
+```shell
+ssh -T gie@gitee.com
+
+
 
 
 ```
