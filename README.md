@@ -35,6 +35,8 @@ git merge [remote/branch]
 
 git rebase [branch]
 
+git revert 
+
 
 ```
 
