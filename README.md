@@ -33,7 +33,7 @@ git fetch
 
 git merge [remote/branch]
 
-
+git rebase [branch]
 
 
 ```

@@ -20,6 +20,10 @@ const options:https.ServerOptions = {
 }
 
 const html = `
+<head>
+	<meta http-equiv="Content-Security-Policy" 
+		content="default-src 'self'; img-src https://*; child-src 'none';"/>
+</head>
 <script>
 	if(window.chrome && typeof chrome.loadTimes === 'function') {
     var loadTimes = window.chrome.loadTimes()
@@ -34,11 +38,33 @@ const html = `
 </script>
 `
 
+const whiteList = ['http://localhost:8080']
+
 const requestListener:http.RequestListener = (req, res)=>{
 	const { httpVersion } = req
+	const ifModifiedSince = req.headers['if-modified-since']
+	const ifNoneMatch = req.headers['if-none-match']
+	const userAgent = req.headers['user-agent']
 
 	res.writeHead(200, {
-		'Content-Type':'text/html; charset=utf-8'
+		'Content-Type':'text/html; charset=utf-8',
+		'Content-Language':'zh-CN, zh;q=0.9, en;q=0.8',
+		'Content-Encoding':'gzip',
+		'Access-Control-Allow-Origin':'*',
+		'Access-Control-Allow-Methods':'GET, POST, HEAD, PUT, DELETE, OPTIONS',
+		'Access-Control-Allow-Headers':'Custom-Header',
+		'Access-Control-Max-Age':'1000',
+		'Cache-Control':'no-cache',
+		'Last-Modified':'',
+		'Etag':'',
+		'Set-Cookie':[
+			'sessionid=178ahjshuiqyahj126ahj; max-age=1200; httpOnly',
+
+		],
+		'Connection':'keep-alive',
+		'Content-Security-Policy':'default-src', 
+
+
 	})
 	
 	res.end(html)
